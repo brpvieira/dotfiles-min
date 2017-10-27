@@ -1,4 +1,4 @@
-i# Launch SSH agent if not running
+# Launch SSH agent if not running
 if ! ps aux |grep $(whoami) |grep ssh-agent |grep -v grep >/dev/null; then ssh-agent ; fi
 
 # Link the latest ssh-agent socket
